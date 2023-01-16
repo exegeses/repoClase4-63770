@@ -19,5 +19,8 @@ Repositorio colaborativo
 
     6. intentar pushear
 
+    7. si da error (probablemente)
+        primero hacer un pull
+        git pull 
 
 
