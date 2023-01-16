@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* globales */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3c3c3c;
+}
+a{
+    text-decoration: none;
+}
+
+/* header */
+header{
+    height: 100px;
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    header a{
+        color: #3C3C3C;
+    }
+    header a img{
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+
+    /* nav */
+    header nav a{
+        padding: 10px;
+    }
+
+/*### hero banner ###*/
+#hero-banner{
+    height: 500px;
+    background-image: url(../imgs/hero-banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 center;/* horiz  vertical */
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 62px;
+}
+
+    h1{
+        margin-left: 62px;
+        font-size: 32px;
+        font-weight: 600;
+        color: white;
+    }
+
+/*### Promos ###*/
+#promos{
+    width: 1100px;
+    margin: auto;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #FFF8EF;
+}
+
+    #promos article{
+        width: 285px;
+        background-color: #ffffff;
+    }
+    #promos h2{
+        margin-left: 30px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #promos article p {
+        margin-left: 30px;
+        padding-bottom: 30px;
+        margin-top: 10px;
+    }
+
+/*### destinos ###*/
+#destinos{
+    width: 1100px;
+    margin: 62px auto 0px auto;
+}
+    #destinos article{
+        height: 350px;
+        margin-bottom: 32px;
+        display: flex;
+    }
+    #destinos article div{
+        width: 340px;
+        margin: auto;
+    }
+
+    #destinos article div h2{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    #destinos article div p{
+        margin-bottom: 24px;
+    }
+    #destinos article div a{
+            display: block;
+            width: 140px;
+            margin: auto;
+            padding: 8px 0px;
+            text-align: center;
+            border: 1px solid #3c3c3c;
+            border-radius: 12px;
+            color: #3C3C3C;
+            transition: 500ms;
+    }
+    #destinos article div a:hover{
+        color: #fff;
+        background-color: #3c3c3c;
+    }
+
+/*### Servicios ###*/
+#servicios{
+    width: 762px;
+    margin: 62px auto;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap; /* respeta el ancho de las cajas */
+}
+
+    #servicios h2{
+        width: 1100px;
+        text-align: center;
+    }
+    #servicios a{
+        width: 160px;
+        height: 140px;
+        display: block;
+        margin: 0px 47px;
+        text-align: center;
+        color: #3C3C3C;
+        border: 1px solid #3c3c3c;
+        border-radius: 12px;
+        transition: .5s;
+    }
+    #servicios a:hover{
+        background-color: #3C3C3C;
+        color: #fff;
+    }
+    
+    .fa-solid{
+        font-size: 66px;
+        margin: 16px 38px;
+    }
+
+/*### mapa ###*/
+    #mapa{
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+    }
+        iframe{
+            width: 1100px;
+            height: 450px;
+            border: none;
+        }
+
+    #mapa a{
+        width: 280px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px 0px;
+        color: #3C3C3C;
+    }
+    #mapa .fa-solid{
+        display: inline-block;
+        width: 30px;
+        font-size: 30px;
+        margin: 0px 16px 0px 0px;
+    }
+
+/*### contacto ###*/
+#contacto{
+    width: 1100px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #EC7D54;
+}
+    #contacto form{
+        width: 550px;
+        margin: auto;
+    }
+    #contacto form input,
+    #contacto form textarea{
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0px;
+        font-family: Raleway, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #3c3c3c;
+        border: 1px solid #EC7D54;
+        background-color: #F8A281;
+    }
+    /* texto del placeholder */
+    #contacto form input::placeholder,
+    #contacto form textarea::placeholder{
+        color: #fff;
+    }
+    #contacto form textarea{
+        height: 152px;
+        resize: none;
+    }
+
+    #contacto button{
+        /*display: block;*/
+        width: 212px;
+        padding: 8px 0px;
+        border: 1px solid #CD5F35;
+        border-radius: 8px;
+        color: #3C3C3C;
+        font-family: Raleway, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #3c3c3c;
+        transition: 500ms;
+        cursor: pointer;
+    }
+
+    #contacto button:hover{
+        color: #fff;
+        background-color: #db7952;
+    }
+    
+/*### footer ###*/
+footer{
+    height: 160px;
+    background-color: #3C3C3C;
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    footer a{
+        color: #fff;
+    }
+    footer a img{
+        vertical-align: middle;
+        margin: 0px 8px;
+    }
+    footer div a{
+        font-size: 32px;
+        margin: 0px 16px;
+    }
