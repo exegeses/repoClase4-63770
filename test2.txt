@@ -1,3 +1,23 @@
 Archivo de prueba 2
 
 otra línea de texto
+
+Repositorio colaborativo
+
+    1. alguien crea el repositorio remoto
+
+    2. los "colaboradores" clonan el repositorio remoto
+
+    3. enviar invitaciones
+            Settings -> Collaborators
+
+    4. crear archivo con el nombre "iapellido"
+            emastrotta.txt
+            fgomez.txt
+
+    5. generar commit 
+
+    6. intentar pushear
+
+
+
